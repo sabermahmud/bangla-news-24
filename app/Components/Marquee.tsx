@@ -16,7 +16,6 @@ const latestNews = async () => {
 
 export default async function MarqueePage() {
   const latestData = await latestNews();
-  console.log(latestData.data)
   const newsData:data[] = latestData.data
 
 

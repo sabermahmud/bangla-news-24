@@ -26,6 +26,7 @@ export default async function Home() {
           <div><PoliticsPage/></div>
           <div><WorldPage/></div>
           <div><EconomyNewsPage/></div>
+          <div><WorldPage/></div>
           <div><HealthPage/></div>
         </div>
         {/* most read section */}

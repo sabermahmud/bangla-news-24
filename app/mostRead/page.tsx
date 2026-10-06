@@ -37,7 +37,7 @@ const mostReadDataPromise = async ():Promise<MostReadNewsResponse> => {
 
 export default async function MostReadPage() {
     const mostReadData = await mostReadDataPromise();
-    const mostReadNews = await mostReadData.data;   console.log(mostReadNews) 
+    const mostReadNews = await mostReadData.data; 
 
   return<>
   <div className="border border-gray-200 rounded-lg my-6 mx-4 p-4 ">
