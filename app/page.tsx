@@ -1,5 +1,10 @@
 import MainNews from "./Components/MainNews";
 import MarqueePage from "./Components/Marquee";
+import EconomyNewsPage from "./economy/page";
+import HealthPage from "./health/page";
+import MostReadPage from "./mostRead/page";
+import PoliticsPage from "./politics/page";
+import WorldPage from "./world/page";
 
 const newsData = async () => {
   const res = await fetch("https://news-api-v2.vercel.app/api/news/sections");
@@ -18,9 +23,15 @@ export default async function Home() {
         {/* news section */}
         <div className="col-span-2">
           <div><MainNews mainNews={mainNews}/></div>
+          <div><PoliticsPage/></div>
+          <div><WorldPage/></div>
+          <div><EconomyNewsPage/></div>
+          <div><HealthPage/></div>
         </div>
         {/* most read section */}
-        <div className="col-span-1"></div>
+        <div className="col-span-1">
+          <MostReadPage/>
+        </div>
       </div>
     </>
   );
